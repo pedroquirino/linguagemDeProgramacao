@@ -57,8 +57,8 @@
 
 <p align="justify">Realize o teste de mesa para 10 cenários possíveis, considerando as variáveis e fórmula acima.
 São exemplos de cenários:
-a) o aluno não fez a P1 mas foi bem nas outras avaliações;
-b) a aluna foi bem em todas as avaliações.</p>
+  a) o aluno não fez a P1 mas foi bem nas outras avaliações;
+  b) a aluna foi bem em todas as avaliações.</p>
 
 
 ### <p align="justify">2. Criação de Modelagem Conceitual a partir de uma Música: </p>

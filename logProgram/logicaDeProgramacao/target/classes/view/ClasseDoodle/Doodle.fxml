@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClassesDoodle.DoodleController">
+   <children>
+      <TabPane layoutX="-1.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Animal">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="25.0" layoutY="22.0" prefHeight="326.0" prefWidth="551.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label fx:id="lblAnimalEspecie" text="Espécie:" />
+                              <Label fx:id="lblAnimalNome" text="Nome:" GridPane.rowIndex="1" />
+                              <Label fx:id="lblAnimalNPericulosidade" text="Nível Periculosidade: (Apenas números)" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtAnimalEspecie" GridPane.columnIndex="1" />
+                              <TextField fx:id="txtAnimalNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtAnimalNPericulosidade" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Button fx:id="btnAnimalSalvar" onAction="#cadastrarAnimal" mnemonicParsing="false" text="Salvar" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Cidade">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="26.0" layoutY="22.0" prefHeight="328.0" prefWidth="551.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label fx:id="lblCidadeVagasEmprego" text="Vagas de Emprego: (Apenas números)" />
+                              <Label fx:id="lblCidadePredioComercial" text="Prédio Comercial: (Apenas números)" GridPane.rowIndex="1" />
+                              <Label fx:id="lblCidadeNome" text="Nome:" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtCidadeVagaEmprego" GridPane.columnIndex="1" />
+                              <TextField fx:id="txtCidadePredioComercial" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtCidadeNome" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Button fx:id="btnCidadeSalvar" onAction="#cadastrarCidade" mnemonicParsing="false" text="Salvar" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Pessoa">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="25.0" layoutY="21.0" prefHeight="327.0" prefWidth="550.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label fx:id="lblPessoaNome" text="Nome:" />
+                              <Label fx:id="lblPessoaIdade" text="Idade: (Apenas números)" GridPane.rowIndex="1" />
+                              <Label fx:id="lblPessoaGenero" text="Gênero: (Apenas M, F ou N. N=Não Binário)" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtPessoaNome" GridPane.columnIndex="1" />
+                              <TextField fx:id="txtPessoaIdade" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtPessoaGenero" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Button fx:id="btnPessoaSalvar" onAction="#cadastrarPessoa" mnemonicParsing="false" text="Salvar" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
